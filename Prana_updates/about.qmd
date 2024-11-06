@@ -1,0 +1,7 @@
+---
+title: "About"
+---
+
+## Présentation 18 novembre 2024
+
+### Apprendre à utiliser le base de Quarto

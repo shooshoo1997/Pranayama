@@ -1,0 +1,22 @@
+                              
+
+Lab notes
+
+
+
+--- Material --- 
+Spectrometer: OceanOptics USB2000+
+Light source: OceanOptics HL-2000-FHSA
+Fiber: EMvision 6 outerrings probe 1 inner probe (alex's probe)
+Software: Opt-id (on windows)
+
+--- Imaging Specs ---
+ExposureTime: 50ms
+IntegrationTime: 1000ms
+Absolute Error: 5.00%
+
+--- Methods ---
+- The white ref was taken on white paper. The image was acquired at an unknown distance but enough to get high signal (50 000 counts highest peak)
+- The red, blue and yellow cardboard spectra were acquired. The images were acquired at an unknown distance.
+- All data were exported to CSV file.
+ 

@@ -1,0 +1,27 @@
+                              
+
+Lab notes
+
+
+
+--- Material --- 
+Spectrometer: OceanOptics USB2000+
+Light source: OceanOptics HL-2000-FHSA
+Fiber: EMvision 6 outerrings probe 1 inner probe (alex's probe)
+Software: Opt-id (on windows)
+
+--- Imaging Specs ---
+ExposureTime: 30ms
+IntegrationTime: 1000ms
+Absolute Error: 5.00%
+
+--- Methods ---
+1- The white ref was taken on white paper. The image was acquired at an unknown distance but enough to get high signal (50 000 counts highest peak). The data is in the folder whiteref.
+2- Mouse #6723 was used first. Its lung and stomach was used. 10 points were taken for each organ. The height was arbitrary but close (1-2mm). The data are in the folder 6723.
+3- Mouse #6700 was used after. Its lung, stomach and thongue was used. 10 points were taken for each organs. The height was arbitrary but close (1-2mm, sometime touching). Data in floder 6723.
+4- Mouse #6700 lung was used to see effect of distance with the sample. At first the sample is touching the probe. Then the prob is getting higher and the signal is aquired. Data in folder 6723.
+5- Because the test .4 showed that at a certain height the singal changes drastically, other measurments were made where the probe was touching the lungs and stomach. The point where signal changed was when prob cam out of liquid.
+the data for test number 5. are in the folder 6723 touching. 
+
+
+ 
