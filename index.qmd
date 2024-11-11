@@ -8,10 +8,6 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 Je m'appel thomas et je vous présente Quarto et son intérêt. 
 
-Elahe is sometime anoying me
+Elahe is sometimes anoying me
 
 
-
-```{python}
-
-```
