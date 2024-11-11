@@ -101,6 +101,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -149,8 +178,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#première-sections" id="toc-première-sections" class="nav-link active" data-scroll-target="#première-sections"><span class="header-section-number">1</span> Première sections</a></li>
+  <li><a href="#deuxième-section" id="toc-deuxième-section" class="nav-link" data-scroll-target="#deuxième-section"><span class="header-section-number">2</span> Deuxième section</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -174,6 +210,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="première-sections" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Première sections</h1>
 <p>Ceci est un texte qui explique la figure <a href="#fig-polar" class="quarto-xref">Figure&nbsp;1</a>. Cette figure est jolie.</p>
 <div id="cell-fig-polar" class="cell" data-execution_count="1">
 <details class="code-fold">
@@ -209,8 +247,16 @@ Figure&nbsp;1: A line plot on a polar axis
 </div>
 </div>
 </div>
+</section>
+<section id="deuxième-section" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Deuxième section</h1>
+<p><span class="math display">\[\begin{equation}
+    a = y+2
+\end{equation}\]</span></p>
+<p><span class="math inline">\(a = (y+2)^{\omega - 2\pi}\)</span></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

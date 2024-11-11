@@ -1,10 +1,12 @@
 ---
 title: "Another_section"
+toc: true
+number-sections: true
 format:
     html:
         code-fold: true
 ---
-
+# Première sections
 Ceci est un texte qui explique la figure @fig-polar. Cette figure est jolie.
 ```{python}
 #| label: fig-polar
@@ -26,8 +28,10 @@ ax.plot(theta, r)
 ax.set_rticks([0.5, 1, 1.5, 2])
 ax.grid(True)
 plt.show()
-
-
-
 ```
+# Deuxième section
+\begin{equation}
+    a = y+2
+\end{equation}
 
+$a = (y+2)^{\omega - 2\pi}$
